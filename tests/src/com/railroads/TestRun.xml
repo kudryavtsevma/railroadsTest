@@ -1,0 +1,4 @@
+<testRun>
+    <test>com.railroads.test.PositiveTests</test>
+    <test>com.railroads.test.NegativeTests</test>
+</testRun>
