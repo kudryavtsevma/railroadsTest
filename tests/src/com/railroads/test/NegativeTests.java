@@ -21,7 +21,7 @@ public class NegativeTests {
         step("Информацию из файла заворачиваем в массив");
         ArrayList<ArrayList<String>> arrayResults = AppUtils.getObjectFromFile(file);
 
-        step("Сравниваем результат с ожиданием");
+        step("Проверить, что в результате ошибка");
         Assert.assertEquals(arrayResults, DataExpectations.getExpectationArrayResult("numberOfWagonDoesNotMatch"));
     }
 
@@ -33,8 +33,7 @@ public class NegativeTests {
         step("Информацию из файла заворачиваем в массив");
         ArrayList<ArrayList<String>> arrayResults = AppUtils.getObjectFromFile(file);
 
-        step("Сравниваем результат с ожиданием");
-        ;
+        step("Проверить что в результате ошибка");
         Assert.assertEquals(arrayResults, DataExpectations.getExpectationArrayResult("charInFirstLineInBlock"));
     }
 
@@ -70,7 +69,7 @@ public class NegativeTests {
         step("Информацию из файла заворачиваем в массив");
         ArrayList<ArrayList<String>> arrayResults = AppUtils.getObjectFromFile(file);
 
-        step("Проверяем, что результат отрицательный");
+        step("Проверяем, что в результате  ошибка");
         Assert.assertEquals(arrayResults, DataExpectations.getExpectationArrayResult("notTextFile.mp3"));
     }
 
@@ -94,7 +93,7 @@ public class NegativeTests {
         step("Информацию из файла заворачиваем в массив");
         ArrayList<ArrayList<String>> arrayResults = AppUtils.getObjectFromFile(file);
 
-        step("Проверяем, что результат отрицательный");
+        step("Проверяем, что в результате ошибка");
         Assert.assertEquals(arrayResults, DataExpectations.getExpectationArrayResult("fileWithoutZeros"));
     }
 
@@ -106,7 +105,7 @@ public class NegativeTests {
         step("Информацию из файла заворачиваем в массив");
         ArrayList<ArrayList<String>> arrayResults = AppUtils.getObjectFromFile(file);
 
-        step("Проверяем, что результат отрицательный");
+        step("Проверяем, что в результате ошибка");
         Assert.assertEquals(arrayResults, DataExpectations.getExpectationArrayResult("wagonsWithNegativeNumbers"));
     }
 }
