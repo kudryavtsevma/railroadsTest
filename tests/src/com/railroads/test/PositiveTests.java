@@ -71,7 +71,7 @@ public class PositiveTests {
         step("Информацию из файла заворачиваем в массив");
         ArrayList<ArrayList<String>> arrayResults = AppUtils.getObjectFromFile(file);
 
-        step("Проверяем, что результат отрицательный");
+        step("Проверяем, что результат положительный");
         Assert.assertEquals(arrayResults, DataExpectations.getExpectationArrayResult("wagonsPartiallyOutOfServiceWithPositiveResult"));
     }
 }
